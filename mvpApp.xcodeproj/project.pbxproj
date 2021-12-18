@@ -13,7 +13,6 @@
 		BF614F80276D599700EAC527 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F7F276D599700EAC527 /* ModuleBuilder.swift */; };
 		BF614F82276D5D1900EAC527 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F81276D5D1800EAC527 /* MainPresenterTest.swift */; };
 		BF614F85276D640300EAC527 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F84276D640300EAC527 /* NetworkService.swift */; };
-		BF614F88276D646E00EAC527 /* ModelPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F87276D646E00EAC527 /* ModelPhotos.swift */; };
 		BF68D38D276E2078002E0243 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D38C276E2078002E0243 /* MainTableViewCell.swift */; };
 		BF6A4838276D6ED800C11766 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A4837276D6ED800C11766 /* DetailPresenter.swift */; };
 		BF6A483D276D730100C11766 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A483B276D730100C11766 /* DetailViewController.swift */; };
@@ -27,6 +26,7 @@
 		BFA4E6CF276D498400BE896B /* mvpAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4E6CE276D498400BE896B /* mvpAppTests.swift */; };
 		BFA4E6D9276D498400BE896B /* mvpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4E6D8276D498400BE896B /* mvpAppUITests.swift */; };
 		BFA4E6DB276D498400BE896B /* mvpAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4E6DA276D498400BE896B /* mvpAppUITestsLaunchTests.swift */; };
+		BFB51839276E8BAF00ECEB15 /* ModelPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		BF614F7F276D599700EAC527 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		BF614F81276D5D1800EAC527 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		BF614F84276D640300EAC527 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		BF614F87276D646E00EAC527 /* ModelPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPhotos.swift; sourceTree = "<group>"; };
 		BF68D38C276E2078002E0243 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BF6A4837276D6ED800C11766 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		BF6A483B276D730100C11766 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		BFA4E6D4276D498400BE896B /* mvpAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvpAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA4E6D8276D498400BE896B /* mvpAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpAppUITests.swift; sourceTree = "<group>"; };
 		BFA4E6DA276D498400BE896B /* mvpAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				BF614F84276D640300EAC527 /* NetworkService.swift */,
-				BF614F87276D646E00EAC527 /* ModelPhotos.swift */,
+				BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -368,9 +368,9 @@
 				BF614F7C276D581900EAC527 /* Presenter.swift in Sources */,
 				BF614F7A276D581100EAC527 /* Model.swift in Sources */,
 				BF614F85276D640300EAC527 /* NetworkService.swift in Sources */,
-				BF614F88276D646E00EAC527 /* ModelPhotos.swift in Sources */,
 				BF6A4838276D6ED800C11766 /* DetailPresenter.swift in Sources */,
 				BF614F80276D599700EAC527 /* ModuleBuilder.swift in Sources */,
+				BFB51839276E8BAF00ECEB15 /* ModelPhotos.swift in Sources */,
 				BFA4E6B9276D498200BE896B /* MainViewController.swift in Sources */,
 				BFA4E6B5276D498200BE896B /* AppDelegate.swift in Sources */,
 				BFA4E6B7276D498200BE896B /* SceneDelegate.swift in Sources */,
