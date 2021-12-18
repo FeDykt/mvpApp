@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol NetworkServiceProtocol {
     func getRequest(_ completion: @escaping (Result<[Photos],Error>) -> Void)
@@ -13,32 +14,21 @@ protocol NetworkServiceProtocol {
 }
 
 struct NetworkService: NetworkServiceProtocol {
+    let urlUsers = "https://jsonplaceholder.typicode.com/users"
+    let urlPhotos = "https://jsonplaceholder.typicode.com/photos"
+    
     func getUsers(_ completion: @escaping (Result<[Users], Error>) -> Void) {
-        let url = "https://jsonplaceholder.typicode.com/users"
-        guard let url = URL(string: url) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            if let error = error { completion(.failure(error)); return }
-            do {
-                let obj = try JSONDecoder().decode([Users].self, from: data!)
-                completion(.success(obj))
-            } catch {
-                completion(.failure(error))
-            }
-        }.resume()
+        AF.request(urlUsers).validate().responseDecodable(of: [Users].self) { response in
+            guard let value = response.value else { return }
+            completion(.success(value))
+        }
     }
     
     func getRequest(_ completion: @escaping (Result<[Photos], Error>) -> Void) {
-        let url = "https://jsonplaceholder.typicode.com/photos"
-        guard let url = URL(string: url) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            if let error = error { completion(.failure(error)); return }
-            do {
-                let obj = try JSONDecoder().decode([Photos].self, from: data!)
-                completion(.success(obj))
-            } catch {
-                completion(.failure(error))
-            }
-        }.resume()
+        AF.request(urlPhotos).validate().responseDecodable(of: [Photos].self) { response in
+            guard let value = response.value else { return }
+            completion(.success(value))
+        }
     }
     
 }
