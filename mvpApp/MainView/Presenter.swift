@@ -5,7 +5,6 @@
 //  Created by fedot on 18.12.2021.
 //
 
-import Foundation
 import UIKit
 
 protocol MainViewProtocol: AnyObject {

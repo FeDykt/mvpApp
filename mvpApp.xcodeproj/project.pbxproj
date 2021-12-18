@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF614F7A276D581100EAC527 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F79276D581100EAC527 /* Model.swift */; };
-		BF614F7C276D581900EAC527 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F7B276D581900EAC527 /* Presenter.swift */; };
 		BF614F7E276D591D00EAC527 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF614F7D276D591D00EAC527 /* MainView.xib */; };
 		BF614F80276D599700EAC527 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F7F276D599700EAC527 /* ModuleBuilder.swift */; };
 		BF614F82276D5D1900EAC527 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF614F81276D5D1800EAC527 /* MainPresenterTest.swift */; };
@@ -27,6 +25,10 @@
 		BFA4E6D9276D498400BE896B /* mvpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4E6D8276D498400BE896B /* mvpAppUITests.swift */; };
 		BFA4E6DB276D498400BE896B /* mvpAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4E6DA276D498400BE896B /* mvpAppUITestsLaunchTests.swift */; };
 		BFB51839276E8BAF00ECEB15 /* ModelPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */; };
+		BFB51841276E8DCC00ECEB15 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB51840276E8DCC00ECEB15 /* UserViewController.swift */; };
+		BFB51843276E8DDE00ECEB15 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB51842276E8DDE00ECEB15 /* UsersModel.swift */; };
+		BFB51845276E8E7C00ECEB15 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB51844276E8E7C00ECEB15 /* UserPresenter.swift */; };
+		BFB5184D276E8FB200ECEB15 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5184C276E8FB200ECEB15 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF614F79276D581100EAC527 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		BF614F7B276D581900EAC527 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		BF614F7D276D591D00EAC527 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		BF614F7F276D599700EAC527 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		BF614F81276D5D1800EAC527 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
@@ -70,7 +70,11 @@
 		BFA4E6D4276D498400BE896B /* mvpAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvpAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA4E6D8276D498400BE896B /* mvpAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpAppUITests.swift; sourceTree = "<group>"; };
 		BFA4E6DA276D498400BE896B /* mvpAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvpAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPhotos.swift; sourceTree = "<group>"; };
+		BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelPhotos.swift; path = ../../ServiceLayer/Network/ModelPhotos.swift; sourceTree = "<group>"; };
+		BFB51840276E8DCC00ECEB15 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		BFB51842276E8DDE00ECEB15 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		BFB51844276E8E7C00ECEB15 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		BFB5184C276E8FB200ECEB15 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = mvpApp/MainView/Presenter.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				BF614F76276D57F000EAC527 /* Model */,
 				BF614F78276D57FB00EAC527 /* View */,
 				BF614F77276D57F500EAC527 /* Presenter */,
+				BF6A4832276D6EA800C11766 /* DetailView */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -111,7 +116,7 @@
 		BF614F76276D57F000EAC527 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BF614F79276D581100EAC527 /* Model.swift */,
+				BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,7 +124,7 @@
 		BF614F77276D57F500EAC527 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BF614F7B276D581900EAC527 /* Presenter.swift */,
+				BFB5184C276E8FB200ECEB15 /* Presenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -146,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				BF614F84276D640300EAC527 /* NetworkService.swift */,
-				BFB51838276E8BAF00ECEB15 /* ModelPhotos.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -204,8 +208,8 @@
 				BFA4E6B6276D498200BE896B /* SceneDelegate.swift */,
 				BF614F7F276D599700EAC527 /* ModuleBuilder.swift */,
 				BF614F83276D63EC00EAC527 /* ServiceLayer */,
+				BFB5183B276E8D4100ECEB15 /* UsersView */,
 				BF614F75276D57E900EAC527 /* MainView */,
-				BF6A4832276D6EA800C11766 /* DetailView */,
 				BFA4E6C0276D498400BE896B /* Assets.xcassets */,
 				BFA4E6C2276D498400BE896B /* LaunchScreen.storyboard */,
 				BFA4E6C5276D498400BE896B /* Info.plist */,
@@ -230,6 +234,40 @@
 				BFA4E6DA276D498400BE896B /* mvpAppUITestsLaunchTests.swift */,
 			);
 			path = mvpAppUITests;
+			sourceTree = "<group>";
+		};
+		BFB5183B276E8D4100ECEB15 /* UsersView */ = {
+			isa = PBXGroup;
+			children = (
+				BFB5183C276E8D5D00ECEB15 /* Model */,
+				BFB5183E276E8D6500ECEB15 /* View */,
+				BFB5183D276E8D6000ECEB15 /* Presenter */,
+			);
+			path = UsersView;
+			sourceTree = "<group>";
+		};
+		BFB5183C276E8D5D00ECEB15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB51842276E8DDE00ECEB15 /* UsersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFB5183D276E8D6000ECEB15 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFB51844276E8E7C00ECEB15 /* UserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BFB5183E276E8D6500ECEB15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFB51840276E8DCC00ECEB15 /* UserViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,14 +403,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6A483D276D730100C11766 /* DetailViewController.swift in Sources */,
-				BF614F7C276D581900EAC527 /* Presenter.swift in Sources */,
-				BF614F7A276D581100EAC527 /* Model.swift in Sources */,
+				BFB51841276E8DCC00ECEB15 /* UserViewController.swift in Sources */,
 				BF614F85276D640300EAC527 /* NetworkService.swift in Sources */,
 				BF6A4838276D6ED800C11766 /* DetailPresenter.swift in Sources */,
 				BF614F80276D599700EAC527 /* ModuleBuilder.swift in Sources */,
 				BFB51839276E8BAF00ECEB15 /* ModelPhotos.swift in Sources */,
 				BFA4E6B9276D498200BE896B /* MainViewController.swift in Sources */,
+				BFB51845276E8E7C00ECEB15 /* UserPresenter.swift in Sources */,
+				BFB5184D276E8FB200ECEB15 /* Presenter.swift in Sources */,
 				BFA4E6B5276D498200BE896B /* AppDelegate.swift in Sources */,
+				BFB51843276E8DDE00ECEB15 /* UsersModel.swift in Sources */,
 				BFA4E6B7276D498200BE896B /* SceneDelegate.swift in Sources */,
 				BF68D38D276E2078002E0243 /* MainTableViewCell.swift in Sources */,
 				BFA4E6BF276D498200BE896B /* mvpApp.xcdatamodeld in Sources */,

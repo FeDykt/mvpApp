@@ -29,4 +29,12 @@ class ModuleBuilder: Builder {
         view.presenter = presenter
         return view
     }
+    
+    static func createUserModule() -> UIViewController {
+        let networkService = NetworkService()
+        let view = UserViewController()
+        let presenter = UserPresenter(view: view, networkService: networkService)
+        view.presenter = presenter
+        return view
+    }
 }
